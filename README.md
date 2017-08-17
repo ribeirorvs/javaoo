@@ -15,3 +15,8 @@ Visibility fundaments. What is private, protected and public. How include it in 
 Third Class:
 
 Included methods get, set and contruc.
+
+
+Fourth Class:
+
+A pratical exemplo with a bank account Class
