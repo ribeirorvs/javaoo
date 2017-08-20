@@ -2,84 +2,20 @@
 package ultraemojicombat;
 
 public class UltraEmojiCombat {
-    public static void main(String[] args) {
-        /*
+    public static void main(String[] args) {    
+        Lutador lutadores[] =  new Lutador[6];
+        lutadores[0] = new Lutador("Pretty Boy", "França", 31, 1.75f, 68.9f, 11, 2, 1);
+        lutadores[1] = new Lutador("Putscript", "Brasil", 29, 1.68f, 57.8f, 14, 2, 2);
+        lutadores[2] = new Lutador("Snapshadow", "EUA", 35, 1.65f, 80.9f, 12, 2, 1);
+        lutadores[3] = new Lutador("Dead Code", "Australia", 28, 1.93f, 81.6f, 13, 0, 2);
+        lutadores[4] = new Lutador("Ufocobol", "Brasil", 37, 1.70f, 119.3f, 5, 4, 3);
+        lutadores[5] = new Lutador("Nerdaard", "EUA", 30, 1.81f, 105.7f, 12, 2, 4);
         
-        Lutador 1: 
-        Nome Pretty Boy
-        Nacionalidade França
-        Idade 31
-        Altura 1.75
-        Peso 68.9
-        Categoria Leve
-        Vitorias 11
-        Derrotas 2
-        Empates 1
+        Luta UEC01 = new Luta();
+        UEC01.marcarLuta(lutadores[0], lutadores[1]);
         
-        /*
-        Lutador 2: 
-        Nome Putscript
-        Nacionalidade Brasil
-        Idade 29
-        Altura 1.68
-        Peso 57.8
-        Categoria Leve
-        Vitorias 14
-        Derrotas 2
-        Empates 3
-        */
-        
-        /*
-        Lutador 3: 
-        Nome Snapshadow
-        Nacionalidade EUA
-        Idade 35
-        Altura 1.65
-        Peso 80.9
-        Categoria Médio
-        Vitorias 12
-        Derrotas 2
-        Empates 1
-        */
-        
-        /*
-        Lutador 4: 
-        Nome Dead Code
-        Nacionalidade Australia
-        Idade 28
-        Altura 1.93
-        Peso 81.6
-        Categoria Médio
-        Vitorias 13
-        Derrotas 0
-        Empates 2
-        */
-        
-        /*
-        Lutador 5: 
-        Nome Ufocobol
-        Nacionalidade Brasil
-        Idade 37
-        Altura 1.70
-        Peso 119.3
-        Categoria Pesado
-        Vitorias 5
-        Derrotas 4
-        Empates 3
-        */
-        
-        /*
-        Lutador 6: 
-        Nome Nerdaard
-        Nacionalidade EUA
-        Idade 30
-        Altura 1.81
-        Peso 105.7
-        Categoria Pesado
-        Vitorias 12
-        Derrotas 2
-        Empates 4
-        */
+        UEC01.lutar();
+
     }
     
 }

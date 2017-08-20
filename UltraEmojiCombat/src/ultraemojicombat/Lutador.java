@@ -109,22 +109,33 @@ public class Lutador {
     }
     
     public void apresentar(){
-        
+        System.out.println("Lutador: " + this.getNome());
+        System.out.println("Origem: " + this.getNacionalidade());
+        System.out.println(this.getIdade() + " anos");
+        System.out.println(this.getAltura() + "m de Altura");
+        System.out.println("Pesando: " + this.getPeso() + "kg");
+        System.out.println("Ganhou: " + this.getVitorias());
+        System.out.println("Perdeu: " + this.getDerrotas());
+        System.out.println("Empatou: " + this.getEmpates());
     }
     
     public void status() {
-        
+        System.out.println(this.getNome());
+        System.out.println("é um peso " + this.getCategoria());
+        System.out.println(this.getVitorias() + " vitorias");
+        System.out.println(this.getDerrotas() + " derrotas");
+        System.out.println(this.getEmpates() + " empates");
     }
     
     public void ganharLuta() {
-        
+        this.setVitorias(this.getVitorias() + 1);
     }
     
     public void perderLuta() {
-        
+        this.setDerrotas(this.getDerrotas() +1);
     }
     
     public void empatarLuta() {
-        
+        this.setEmpates(this.getEmpates() + 1);
     }
 }
